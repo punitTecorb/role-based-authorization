@@ -11,6 +11,8 @@
    2. /users - secure route restricted to "Admin" users only, it accepts HTTP GET requests and returns a list of all users if the HTTP Authorization header contains a valid JWT token and the user is in the "Admin" role. If there is no auth token, the token is invalid or the user is not in the "Admin" role then a 401 Unauthorized response is returned.
    3. /users/:id - secure route restricted to authenticated users in any role, it accepts HTTP GET requests and returns the user record for the specified "id" parameter if authorization is successful. Note that "Admin" users can access all user records, while other roles (e.g. "User") can only access their own user record.
 
+   you can find code inside src folder.
+
 ## Setup Steps:
 ### Required details for setup this project
    1. Add your mongodb database string in env file.
